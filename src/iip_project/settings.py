@@ -27,7 +27,7 @@ SECRET_KEY = 'nlu65_2eqi2mkx8^c1m9l%p##9v%@gh!_9+xvxwx$r&n4^@dcc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://wantedprice02.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://wantedprice02.herokuapp.com', '127.0.0.1','https://git.heroku.com/wantedprice02.git']
 
 
 # Application definition
