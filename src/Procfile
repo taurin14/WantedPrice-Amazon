@@ -1,5 +1,0 @@
-web: waitress-serve --port=$PORT iip_project.wsgi:application
-<<<<<<< HEAD
-
-=======
->>>>>>> 71d666cfa1fd08e71b53163b5bc30d01c44a4106
