@@ -85,12 +85,16 @@ WSGI_APPLICATION = 'iip_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfpa9ejtesunhf',
+        'HOST': 'ec2-54-155-35-88.eu-west-1.compute.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'peflwtggocsglh',
+        'PASSWORD': '277499676641b5415f21f0e6dfe77ef0835adeee43391cb8bde3dd114c38885a'
     }
 }
-
-
+#postgres://pigiqqcggeatrz:511a6d634f273cf773689093a48f2cf8f600a912992780b83c5186cf7bded941@ec2-54-155-35-88.eu-west-1.compute.amazonaws.com:5432/dfk62j7blej75
+#postgres://peflwtggocsglh:277499676641b5415f21f0e6dfe77ef0835adeee43391cb8bde3dd114c38885a@ec2-54-155-35-88.eu-west-1.compute.amazonaws.com:5432/dfpa9ejtesunhf
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -128,9 +132,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_DIRS = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
 django_heroku.settings(locals())
 # crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
